@@ -12,8 +12,32 @@
       background-color: #f4f4f4;
       text-align: center;
     }
-    h1 {
-      margin-bottom: 40px;
+    .Start {
+      margin-top: 150px; /* enough to push below the fixed navbar */
+      padding: auto;
+    }
+
+    .navbar {
+      height: 10%;
+      padding: 1rem 2rem;
+      text-align: center;
+      background-color: black;
+      width: 95%;
+      position: fixed;
+      border-radius: 15px;
+      
+    }
+    .navbar h1{
+      color: white;
+    }
+    .Button {
+      width: 10%;
+      padding: 15px;
+      text-align: center;
+      background-color: #222;
+      border-radius: 14px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .gallery {
       display: flex;
@@ -71,26 +95,31 @@
     }
   </style>
 </head>
-<body>
 
-  <h1>Comparison of Maximum density subgraph algorithms and their detailed analysis</h1>
-  <h2>Output of CoreExact Algorithm</h2>
+<body> 
+  <div class="navbar">
+    <h1>Comparison of Maximum density subgraph algorithms and their detailed analysis</h1>
+  </div> 
+  <div class ="Start">
+    <h2>Output of CoreExact Algorithm</h2>
+  </div>
+  
   
   <div class="gallery">
     <div>
-      <img src="Ca-HepTh Core.jpg" alt="Ca-HepTh Core">
+      <img src="src/Ca-HepTh Core.jpg" alt="Ca-HepTh Core">
       <p class="caption">Output of Ca-HepTh in algorithm CoreExact</p>
     </div>
     <div>
-      <img src="Netscience-core.jpg" alt="Netscience-core">
+      <img src="src/Netscience-core.jpg" alt="Netscience-core">
       <p class="caption">Output of Netscience in algorithm CoreExact</p>
     </div>
     <div>
-      <img src="Yeast- Core.jpg" alt="Yeast-core">
+      <img src="src/Yeast- Core.jpg" alt="Yeast-core">
       <p class="caption">Output of Yeast h in algorithm CoreExact</p>
     </div>
     <div>
-      <img src="as733core.jpg" alt="as733-core">
+      <img src="src/as733core.jpg" alt="as733-core">
       <p class="caption">Output of as 733 in algorithm CoreExact</p>
     </div>    
   </div>
@@ -98,23 +127,30 @@
   <h2>Output of Exact Algorithm</h2>
   <div class="gallery">
     <div>
-      <img src="yeast-exact.jpg" alt="yeast-exact">
+      <img src="src/yeast-exact.jpg" alt="yeast-exact">
       <p class="caption">Output of yeast in algorithm Exact</p>
     </div>
     <div>
-      <img src="Netscience-exact.jpg" alt="Netscience-exact">
+      <img src="src/Netscience-exact.jpg" alt="Netscience-exact">
       <p class="caption">Output of Netscience in algorithm Exact</p>
     </div>
     <div>
-      <img src="yeast-a.png" alt="yeast-anal">
+      <img src="src/yeast-a.png" alt="yeast-anal">
       <p class="caption">Clique size vs density for yeast dataset</p>
     </div>
     <div>
-      <img src="Netscience-a.png" alt="Netscience-anal">
+      <img src="src/Netscience-a.png" alt="Netscience-anal">
       <p class="caption">Clique size vs density for netscience dataset</p>
     </div>
   </div>
-
+  <div class="Button">
+    <p>
+      <a href="src/report.pdf" target="_blank" style="font-size: 16px; text-decoration: none; color: #007bff;">
+        📄 View Project Report (PDF)
+      </a>
+    </p>
+  </div>
+  
   <footer>
     <p><strong>Contributors:</strong></p>
     <table>
